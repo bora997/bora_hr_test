@@ -10,3 +10,12 @@ out/
 .project
 .settings
 .classpath
+*.xml
+logs/
+
+*.log
+*.bin
+*.lock
+*.jar
+build/stacktrace.log
+*.MF
