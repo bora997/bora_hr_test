@@ -128,3 +128,18 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+---
+grails:
+    redis:
+        port: 6379
+        timeout: 2000
+        poolConfig:
+            testWhileIdle: true
+            maxTotal: 500
+environments:
+    development:
+        grails:
+            redis:
+                host: 172.30.30.23
+                password: P@ssw0rd
+                database: 0
